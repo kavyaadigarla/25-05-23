@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+main()
+{
+    char str[100];
+    int i,n=0,j=0,k=0;
+    scanf("%s",str);
+    int len=strlen(str);
+    for(i=0;i<len;i++)
+    {
+        if(str[i]>='A'&&str[i]<='Z')
+            n++;
+        else if(str[i]>='a'&&str[i]<='z')
+            j++;
+        else
+            k++;
+    }
+    printf("Uppercase = %d\n",i);
+    printf("Lowercase = %d\n",j);
+    printf("Special characters = %d\n",k);
+}
